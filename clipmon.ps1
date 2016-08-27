@@ -219,4 +219,7 @@ function ClipboardWatcher-Start
     }
 }
 
+$logtime = Get-Date -Format "yyyy-MM-dd-hh:mm:ss"
+$logitem = "$pid $logtime Started"
+$logitem >> $clipmonfile
 ClipboardWatcher-Start
